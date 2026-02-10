@@ -13,6 +13,7 @@
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
+            @php $empresa = \App\Models\Empresa::first(); @endphp
             <a class="navbar-brand fw-bold" href="{{ route('produtos.index') }}">
                 <i class="fas fa-box"></i> Estoque Univesp
             </a>

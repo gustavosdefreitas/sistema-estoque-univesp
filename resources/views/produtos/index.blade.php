@@ -1,10 +1,17 @@
 @extends('layouts.app')
 @section('content')
 <h2>Lista de Produtos</h2>
-<a href="{{ route('relatorio.estoque') }}" class="btn btn-danger mb-3">
+<div class="mb-3">
+    <!-- NOVO BOTÃO DADOS EMPRESA -->
+    <a href="{{ route('empresas.create') }}" class="btn btn-info me-2">
+        <i class="fas fa-building"></i> Dados Empresa
+    </a>
+
+    <a href="{{ route('relatorio.estoque') }}" class="btn btn-danger mb-3">
     📊 Gerar Relatório PDF
-</a>
-<a href="{{ route('produtos.create') }}" class="btn btn-success mb-3">➕ Novo Produto</a>
+    </a>
+    <a href="{{ route('produtos.create') }}" class="btn btn-success mb-3">➕ Novo Produto</a>
+</div>
 
 <div class="table-responsive">
 <table class="table table-striped">
