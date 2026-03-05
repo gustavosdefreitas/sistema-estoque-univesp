@@ -22,14 +22,6 @@ class VendaController extends Controller
             'quantidade' => 'required|integer|min:1|max:' . $produto->estoque_atual
         ]);
 
-        Venda::create([
-            'produto_id' => $produto->id,
-            'quantidade' => $request->quantidade,
-            'valor_unitario' => $produto->preco_venda,
-            'valor_total' => $request->quantidade * $produto->preco_venda,
-            'data' => now()
-        ]);
-
         $produto->decrement('estoque_atual', $request->quantidade);
 
         return redirect()->route('produtos.index')->with('success', '✅ Venda OK!');

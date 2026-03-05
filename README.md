@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
@@ -57,3 +58,26 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+=======
+# 📦 Sistema de Controle de Estoque - Projeto Integrador Univesp
+
+## Tecnologias
+- **Laravel 12.50** + **PHP 8.2** + **MySQL**
+- **Bootstrap 5** + **DomPDF** (relatórios)
+- **Git/GitHub** (controle de versão)
+
+## Funcionalidades
+✅ **CRUD Produtos** (cadastrar/editar/excluir)  
+✅ **Entradas** (+estoque)  
+✅ **Saídas/Vendas** (-estoque com validações)  
+✅ **Relatório PDF** (produtos críticos em vermelho)  
+✅ **Interface responsiva** Bootstrap  
+
+## Como testar
+```bash
+composer install
+cp .env.example .env
+php artisan key:generate
+php artisan migrate
+php artisan serve
+>>>>>>> b952f25f06142ce3d3c0a87b1980c794f5ae9543
